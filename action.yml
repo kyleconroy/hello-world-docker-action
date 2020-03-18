@@ -8,7 +8,7 @@ inputs:
     default: 'World'
 runs:
   using: 'docker'
-  image: 'kjconroy/gengengen'
+  image: 'docker://kjconroy/gengengen'
   args:
     - ${{ inputs.who-to-greet }}
 # outputs:
